@@ -1,0 +1,1 @@
+partial_sort(arr.begin(), arr.begin() + 3, arr.end());
