@@ -2,9 +2,11 @@
 
 lower bound :
 Find the first element that is not less than x (i.e., >= x).
+// auto it = lower_bound(v.begin(), v.end(), x);  // First element >= x
 
 upper bound :
 Find the first element that is strictly greater than x (i.e., > x).
+auto it = upper_bound(v.begin(), v.end(), x);  // First element > x
 
 int lower_bound(vector<int>& arr, int k,int n) {
         int low = 0, high = n- 1;
@@ -45,8 +47,8 @@ int lower_bound(vector<int>& arr, int k,int n) {
             return {-1, -1};
         return {lb, upper_bound(arr, k,n)-1};
     }
-};
 
+    
 another methode bY cpp stl
 
 class Solution {
